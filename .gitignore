@@ -26,6 +26,7 @@ hs_err_pid*
 .LSOverride
 Icon
 ._*
+out/*
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
