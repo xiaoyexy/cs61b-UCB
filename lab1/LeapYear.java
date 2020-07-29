@@ -18,10 +18,11 @@ public class LeapYear {
 
         int reminder4 = year % 4;
         int reminder100 = year % 100;
+        int reminder400 = year % 400;
 
         if (reminder4 == 0 && reminder100 != 0) {
             return true;
-        } else if (reminder4 == 0 && reminder100 == 0) {
+        } else if (reminder400 == 0) {
             return true;
         } else {
             return false;
