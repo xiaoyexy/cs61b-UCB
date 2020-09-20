@@ -11,7 +11,7 @@
  *    - Assumes the audio is monaural, with sampling rate of 44,100.
  *
  *************************************************************************/
-
+package proj0;
 import javax.sound.sampled.*;
 import java.applet.Applet;
 import java.applet.AudioClip;

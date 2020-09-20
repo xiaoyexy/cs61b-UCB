@@ -2,7 +2,7 @@
  *  in metric tons of a given country! Fun fun fun!
  *  @author Josh Hug
  */
-
+package proj0.examples;
 public class InDemo {	
 
 	public static void main(String[] args) {

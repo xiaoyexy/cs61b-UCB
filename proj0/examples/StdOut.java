@@ -5,7 +5,7 @@
  *  Writes data of various types to standard output.
  *
  *************************************************************************/
-
+package proj0.examples;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;

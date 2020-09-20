@@ -1,6 +1,7 @@
 /**
  *  Tests the Planet constructor.
  */
+package proj0;
 public class TestPlanetConstructor {
 
     /**

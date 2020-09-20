@@ -1,7 +1,8 @@
-
 /**
  *  Tests calcDistance
  */
+package proj0;
+
 public class TestCalcDistance {
 
     /**
