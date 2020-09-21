@@ -1,4 +1,6 @@
-package proj0;
+//package proj0;
+
+//import proj0.Planet;
 
 public class NBody {
 
@@ -6,6 +8,7 @@ public class NBody {
         In in = new In(file);
         int N = in.readInt();
         double r = in.readDouble();
+        in.close();
         return r;
     }
 
@@ -14,7 +17,7 @@ public class NBody {
         int N = in.readInt();
         double r = in.readDouble();
         Planet[] bodies = new Planet[N];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < N; i++) {
             double n1 = in.readDouble();
             double n2 = in.readDouble();
             double n3 = in.readDouble();
@@ -23,6 +26,7 @@ public class NBody {
             String n6 = in.readString();
             bodies[i] = new Planet(n1, n2, n3, n4, n5, n6);
         }
+        in.close();
         return bodies;
     }
 
