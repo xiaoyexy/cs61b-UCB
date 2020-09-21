@@ -2,7 +2,7 @@
  *  Tests Nbody.readRadius. Reads in ./data/planets.txt and checks to see that
  *  result matches hard coded value.
  */
-package proj0;
+//package proj0;
 public class TestReadRadius {
 
     /**

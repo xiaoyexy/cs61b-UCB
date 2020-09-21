@@ -1,7 +1,5 @@
 //package proj0;
 
-//import proj0.Planet;
-
 public class NBody {
 
     public static double readRadius(String file) {

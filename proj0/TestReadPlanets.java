@@ -2,7 +2,7 @@
  *  Tests Nbody.readPlanets. Reads in ./data/planets.txt and checks output of
  *  readPlanets().
  */
-package proj0;
+//package proj0;
 public class TestReadPlanets {
 
     private static boolean doubleEquals(double actual, double expected, double eps) {
