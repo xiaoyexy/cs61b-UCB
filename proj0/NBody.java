@@ -1,4 +1,4 @@
-//package proj0;
+package proj0;
 
 public class NBody {
 
@@ -46,7 +46,6 @@ public class NBody {
             body.draw();
         }
 
-
         // animation
         StdDraw.enableDoubleBuffering();
         double t = 0;
@@ -69,6 +68,8 @@ public class NBody {
             t += dt;
         }
 
+
+        // output
         StdOut.printf("%d\n", planets.length);
         StdOut.printf("%.2e\n", radius);
         for (int i = 0; i < planets.length; i++) {
