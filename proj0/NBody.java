@@ -1,6 +1,4 @@
-//package proj0;
-
-//import proj0.Planet;
+package proj0;
 
 public class NBody {
 

@@ -1,4 +1,4 @@
-//package proj0;
+package proj0;
 
 import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
@@ -82,8 +82,8 @@ public class Planet {
         this.yyPos += dt * this.yyVel;
     }
 
-    public void draw(){
-        StdDraw.picture(xxPos,yyPos,"images/"+imgFileName);
+    public void draw() {
+        StdDraw.picture(xxPos, yyPos, "images/" + imgFileName);
     }
 
 
