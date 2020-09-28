@@ -83,17 +83,17 @@ public class ArrayDequeTest {
     public void test1() {
         ArrayDeque<Integer> res = new ArrayDeque<>();
         res.addLast(0);
-        res.removeFirst()  ;
+        res.removeFirst();
         res.addFirst(2);
-        res.get(0)  ;
+        res.get(0);
 
         res.addFirst(4);
         res.addLast(5);
         res.addFirst(6);
         res.printDeque();
 
-        res.removeFirst()   ;
-        res.removeFirst()  ;
+        res.removeFirst();
+        res.removeFirst();
 
         res.printDeque();
 
