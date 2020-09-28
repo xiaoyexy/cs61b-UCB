@@ -1,4 +1,4 @@
-// package proj1a;
+ // package proj1a;
 
 import org.junit.Test;
 
@@ -76,7 +76,6 @@ public class ArrayDequeTest {
 
         System.out.println(res.get(2));
         System.out.println(res.get(3));
-
 
     }
 

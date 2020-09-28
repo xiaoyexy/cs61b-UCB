@@ -39,7 +39,7 @@ public class ArrayDeque<T> {
 
     //Adds an item of type T to the front of the deque.
     public void addFirst(T item) {
-        if (nextLast == nextFirst) {
+        if (size == items.length) {
             resize(items.length * RFACTOR);
         }
         items[nextFirst] = item;
@@ -50,7 +50,7 @@ public class ArrayDeque<T> {
 
     //Adds an item of type T to the back of the deque.
     public void addLast(T item) {
-        if (nextLast == nextFirst) {
+        if (size == items.length) {
             resize(items.length * RFACTOR);
         }
         items[nextLast] = item;
@@ -118,6 +118,10 @@ public class ArrayDeque<T> {
     //Gets the item at the given index, where 0 is the front, 1 is the next item, and so forth.
     //If no such item exists, returns null. Must not alter the deque!
     public T get(int index) {
+        if (index+1 >size) {
+            return null;
+        }
+
         int pointer = nextFirst;
         int i = 0;
         while (i <= index) {
