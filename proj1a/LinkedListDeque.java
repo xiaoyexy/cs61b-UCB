@@ -1,15 +1,15 @@
-// package proj1a;
+package proj1a;
 
 public class LinkedListDeque<T> {
     private Node<T> sentinel;
     private int size;
 
-    public class Node<T> {
+    private class Node<T> {
         private T item;
         private Node<T> prev;
         private Node<T> next;
 
-        public Node(T item) {
+        Node(T item) {
             this.item = item;
             this.prev = null;
             this.next = null;
@@ -49,10 +49,7 @@ public class LinkedListDeque<T> {
 
 
     public boolean isEmpty() {
-        if (size == 0) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
 
     public int size() {
@@ -117,7 +114,7 @@ public class LinkedListDeque<T> {
         return getRecursiveHelper(sentinel.next, index);
     }
 
-    public T getRecursiveHelper(Node<T> p, int index) {
+    private T getRecursiveHelper(Node<T> p, int index) {
         if (index == 0) {
             return p.item;
         }
