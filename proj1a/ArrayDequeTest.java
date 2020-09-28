@@ -1,4 +1,4 @@
- // package proj1a;
+// package proj1a;
 
 import org.junit.Test;
 
@@ -76,6 +76,32 @@ public class ArrayDequeTest {
 
         System.out.println(res.get(2));
         System.out.println(res.get(3));
+
+    }
+
+    @Test
+    public void test1() {
+        ArrayDeque<Integer> res = new ArrayDeque<>();
+        res.addLast(0);
+        res.removeFirst()  ;
+        res.addFirst(2);
+        res.get(0)  ;
+
+        res.addFirst(4);
+        res.addLast(5);
+        res.addFirst(6);
+        res.printDeque();
+
+        res.removeFirst()   ;
+        res.removeFirst()  ;
+
+        res.printDeque();
+
+        res.addLast(9);
+        res.printDeque();
+
+        res.removeLast();
+        res.printDeque();
 
     }
 

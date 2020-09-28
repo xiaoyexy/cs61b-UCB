@@ -39,7 +39,7 @@ public class ArrayDeque<T> {
 
     //Adds an item of type T to the front of the deque.
     public void addFirst(T item) {
-        if (size == items.length) {
+        if (nextFirst == nextLast) {
             resize(items.length * RFACTOR);
         }
         items[nextFirst] = item;
@@ -50,12 +50,12 @@ public class ArrayDeque<T> {
 
     //Adds an item of type T to the back of the deque.
     public void addLast(T item) {
-        if (size == items.length) {
+        if (nextFirst == nextLast) {
             resize(items.length * RFACTOR);
         }
         items[nextLast] = item;
         size += 1;
-        nextLast += moveOne(nextLast);
+        nextLast = moveOne(nextLast);
     }
 
     public boolean isEmpty() {
@@ -70,6 +70,11 @@ public class ArrayDeque<T> {
 
     //Prints the items in the deque from first to last, separated by a space
     public void printDeque() {
+//        int oldIndex = moveOne(nextFirst);
+//        for (int i = 1; i <= size; i += 1) {
+//            System.out.print(items[oldIndex] + " ");
+//            oldIndex = moveOne(oldIndex);
+//        }
         for (int i = moveOne(nextFirst); i != nextLast; i = moveOne(i)) {
             System.out.print(items[i] + " ");
         }
@@ -118,7 +123,7 @@ public class ArrayDeque<T> {
     //Gets the item at the given index, where 0 is the front, 1 is the next item, and so forth.
     //If no such item exists, returns null. Must not alter the deque!
     public T get(int index) {
-        if (index+1 >size) {
+        if (index + 1 > size) {
             return null;
         }
 
