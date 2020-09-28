@@ -1,4 +1,4 @@
-// package proj1a;
+package proj1a;
 
 public class LinkedListDeque<T> {
     private Node<T> sentinel;

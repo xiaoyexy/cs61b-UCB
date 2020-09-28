@@ -1,4 +1,4 @@
-// package proj1a;
+package proj1a;
 
 public class ArrayDeque<T> {
     private int size;
@@ -67,14 +67,8 @@ public class ArrayDeque<T> {
         return size;
     }
 
-
     //Prints the items in the deque from first to last, separated by a space
     public void printDeque() {
-//        int oldIndex = moveOne(nextFirst);
-//        for (int i = 1; i <= size; i += 1) {
-//            System.out.print(items[oldIndex] + " ");
-//            oldIndex = moveOne(oldIndex);
-//        }
         for (int i = moveOne(nextFirst); i != nextLast; i = moveOne(i)) {
             System.out.print(items[i] + " ");
         }
