@@ -1,6 +1,4 @@
-package proj1b.fromProj1a;
-
-import proj1b.Deque;
+// package proj1b;
 
 public class LinkedListDeque<T> implements Deque<T> {
     private Node<T> sentinel;
