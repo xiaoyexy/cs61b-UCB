@@ -1,7 +1,5 @@
 // package proj1b;
 
-// import proj1b.fromProj1a.LinkedListDeque;
-
 public class Palindrome {
 
     public Deque<Character> wordToDeque(String word) {
