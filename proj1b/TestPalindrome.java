@@ -45,11 +45,17 @@ public class TestPalindrome {
         assertFalse(palindrome.isPalindrome("ACDC", offByOne));
         assertFalse(palindrome.isPalindrome("yang", offByOne));
 
-        assertTrue(palindrome.isPalindrome("AAAaAAA", offByOne));
-        assertTrue(palindrome.isPalindrome("ABBA", offByOne));
+        assertFalse(palindrome.isPalindrome("AAAaAAA", offByOne));
+        assertFalse(palindrome.isPalindrome("ABBA", offByOne));
         assertTrue(palindrome.isPalindrome("", offByOne));
         assertTrue(palindrome.isPalindrome("s", offByOne));
-        assertTrue(palindrome.isPalindrome("racecar", offByOne));
-        assertTrue(palindrome.isPalindrome("noon", offByOne));
+        assertFalse(palindrome.isPalindrome("racecar", offByOne));
+        assertFalse(palindrome.isPalindrome("noon", offByOne));
+        assertTrue(palindrome.isPalindrome("flake", offByOne));
+        assertTrue(palindrome.isPalindrome("zyzy", offByOne));
+        assertTrue(palindrome.isPalindrome("yyxz", offByOne));
+        assertTrue(palindrome.isPalindrome("yyyxz", offByOne));
+        assertFalse(palindrome.isPalindrome("aa", offByOne));
+        assertFalse(palindrome.isPalindrome("xyz", offByOne));
     }
 }
