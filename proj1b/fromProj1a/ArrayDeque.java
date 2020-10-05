@@ -1,6 +1,8 @@
 package proj1b.fromProj1a;
 
-public class ArrayDeque<T> {
+import proj1b.Deque;
+
+public class ArrayDeque<T> implements Deque<T> {
     private int size;
     private int nextFirst;
     private int nextLast;
@@ -38,6 +40,7 @@ public class ArrayDeque<T> {
     }
 
     //Adds an item of type T to the front of the deque.
+    @Override
     public void addFirst(T item) {
         if (nextFirst == nextLast) {
             resize(items.length * RFACTOR);
@@ -49,6 +52,7 @@ public class ArrayDeque<T> {
 
 
     //Adds an item of type T to the back of the deque.
+    @Override
     public void addLast(T item) {
         if (nextFirst == nextLast) {
             resize(items.length * RFACTOR);
@@ -58,16 +62,19 @@ public class ArrayDeque<T> {
         nextLast = moveOne(nextLast);
     }
 
+    @Override
     public boolean isEmpty() {
         return size == 0;
 
     }
 
+    @Override
     public int size() {
         return size;
     }
 
     //Prints the items in the deque from first to last, separated by a space
+    @Override
     public void printDeque() {
         for (int i = moveOne(nextFirst); i != nextLast; i = moveOne(i)) {
             System.out.print(items[i] + " ");
@@ -76,6 +83,7 @@ public class ArrayDeque<T> {
     }
 
     //Removes and returns the item at the front of the deque. If no such item exists, returns null.
+    @Override
     public T removeFirst() {
         if (isEmpty()) {
             return null;
@@ -96,6 +104,7 @@ public class ArrayDeque<T> {
 
 
     //Removes and returns the item at the back of the deque. If no such item exists, returns null.
+    @Override
     public T removeLast() {
         if (isEmpty()) {
             return null;
@@ -116,6 +125,7 @@ public class ArrayDeque<T> {
 
     //Gets the item at the given index, where 0 is the front, 1 is the next item, and so forth.
     //If no such item exists, returns null. Must not alter the deque!
+    @Override
     public T get(int index) {
         if (index + 1 > size) {
             return null;

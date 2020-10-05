@@ -23,4 +23,4 @@ public class RotatingSLList<Item> extends SLList<Item> {
         rsl.rotateRight();
         rsl.print();
     }
-} 
+}
