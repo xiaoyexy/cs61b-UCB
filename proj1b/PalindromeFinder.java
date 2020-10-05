@@ -1,7 +1,7 @@
 /**
  * This class outputs all palindromes in the words file in the current directory.
  */
-//package proj1b;
+package proj1b;
 
 import edu.princeton.cs.introcs.In;
 
