@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+// source from "https://github.com/qian-wu/ca61b-sp-18/tree/master/proj1gold"
 public class TestArrayDequeGold {
     private StudentArrayDeque<Integer> stuDque = new StudentArrayDeque<>();
     private ArrayDequeSolution<Integer> solDeque = new ArrayDequeSolution<>();
