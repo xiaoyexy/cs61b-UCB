@@ -23,9 +23,9 @@ public class GuitarHero {
             if (StdDraw.hasNextKeyTyped()) {
                 char key = StdDraw.nextKeyTyped();
                 try {
-                    int index = KEYBOARD.indexOf(key);
+                    int index = KEYBOARD.indexOf(key); // invalid return -1
                     strings[index].pluck();
-                } catch (Exception e) {
+                } catch (IndexOutOfBoundsException e) {
                     System.out.println("Invalid keyboard input");
                 }
             }

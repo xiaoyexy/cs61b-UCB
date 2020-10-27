@@ -19,7 +19,7 @@ public class TestArrayRingBuffer {
         arb.enqueue(3);
         try {
             arb.enqueue(3);
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             System.out.println(e);
         }
 
@@ -38,7 +38,7 @@ public class TestArrayRingBuffer {
         arb.dequeue();
         try {
             arb.dequeue();
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             System.out.println(e);
         }
     }
