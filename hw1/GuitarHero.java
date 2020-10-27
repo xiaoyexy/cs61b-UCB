@@ -1,9 +1,8 @@
-//package hw1;
+package hw1;
 
 import edu.princeton.cs.introcs.StdDraw;
 import edu.princeton.cs.introcs.StdAudio;
-//import hw1.synthesizer.GuitarString;
-import synthesizer.GuitarString;
+import hw1.synthesizer.GuitarString;
 
 public class GuitarHero {
 

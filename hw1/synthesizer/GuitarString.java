@@ -1,5 +1,4 @@
-//package hw1.synthesizer;
-package synthesizer;
+package hw1.synthesizer;
 
 //Make sure this class is public
 public class GuitarString {

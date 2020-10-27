@@ -1,5 +1,4 @@
-//package hw1.synthesizer;
-package synthesizer;
+package hw1.synthesizer;
 
 import edu.princeton.cs.introcs.StdAudio;
 

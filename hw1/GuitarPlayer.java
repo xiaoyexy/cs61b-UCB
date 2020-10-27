@@ -1,8 +1,7 @@
-//package hw1;
+package hw1;
 
 import edu.princeton.cs.algs4.StdAudio;
-//import hw1.synthesizer.GuitarString;
-import synthesizer.GuitarString;
+import hw1.synthesizer.GuitarString;
 
 import javax.sound.midi.*;
 import java.io.File;

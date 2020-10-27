@@ -1,5 +1,4 @@
-//package hw1.synthesizer;
-package synthesizer;
+package hw1.synthesizer;
 
 import java.util.Iterator;
 
@@ -60,8 +59,8 @@ public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> {
     @Override
     public Iterator<T> iterator() {
         return new KeyIterator();
-
     }
+
 
     private class KeyIterator implements Iterator<T> {
         private int p;

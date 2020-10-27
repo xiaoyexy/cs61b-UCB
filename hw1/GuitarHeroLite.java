@@ -1,12 +1,8 @@
-/**
- * A client that uses the synthesizer package to replicate a plucked guitar string sound
- */
-//package hw1;
+package hw1;
 
 import edu.princeton.cs.introcs.StdDraw;
 import edu.princeton.cs.introcs.StdAudio;
-//import hw1.synthesizer.GuitarString;
-import synthesizer.GuitarString;
+import hw1.synthesizer.GuitarString;
 
 
 public class GuitarHeroLite {
